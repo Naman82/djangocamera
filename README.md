@@ -11,7 +11,7 @@ pip install djangocamera
 
 ## Usage
 
-In `views.py` file 
+The `views.py` file, in the `app` directory:
 ```python
 from django.shortcuts import render
 from djangocamera.streaming import video_feed
@@ -23,7 +23,7 @@ def camera(request):
 def index(request):
   return render(request,"index.html",{})
 ```
-In `urls.py` file
+The `urls.py` file, in the `app` directory:
 ``` python
 from django.urls import path
 from . import views
@@ -34,7 +34,7 @@ urlpatterns = [
 ]
 
 ```
-In `index.html` file
+The `index.html` file, in the templates directory:
 ```python
 <!DOCTYPE html>
 <html lang="en">
